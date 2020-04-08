@@ -3,7 +3,9 @@ const config = require('./environment/env.config'),
     app = express(),
     port = config.port,
     mongoose = require('mongoose'),
-    EventModel = require("./Models/events.model"),
+    EventModel = require("./models/event.model"),
+    StoryModel = require("./models/story.model"),
+    Goal = require("./models/goal.model"),
     bodyParser = require('body-parser'),
     monk = require('monk');
 
