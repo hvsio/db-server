@@ -6,6 +6,7 @@ const config = require('./environment/env.config'),
     EventModel = require("./models/event.model"),
     StoryModel = require("./models/story.model"),
     Goal = require("./models/goal.model"),
+    User = require("./models/user.model"),
     bodyParser = require('body-parser'),
     monk = require('monk');
 

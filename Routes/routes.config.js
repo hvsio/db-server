@@ -4,6 +4,7 @@ module.exports = function (app) {
     const EventController = require('../controllers/event.controller');
     const GoalController = require('../controllers/goal.controller');
     const StoryController = require('../controllers/story.controller');
+    const UserController = require('../controllers/user.controller');
 
 // events routes
 
@@ -37,5 +38,12 @@ module.exports = function (app) {
         .get(StoryController.findStory)
         .delete(StoryController.deleteStory)
         .put(StoryController.updateStory)
+
+// user routes
+
+    app.route('/user')
+        .get(UserController.me)
+        .put(UserController.updateMe)
+
 
 };
